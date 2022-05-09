@@ -1,0 +1,8 @@
+# for yevis-cli
+
+.env
+yevis-metadata.yml
+yevis-metadata.json
+sapporo_run
+test-logs
+yevis
