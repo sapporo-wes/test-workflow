@@ -20,17 +20,17 @@ The workflows that were verified are as follows:
 ## Execution methods and results
 
 We use [Yevis](https://github.com/suecharo/yevis-cli) as the execution runner for [Sapporo](https://github.com/sapporo-wes/sapporo).
-Yevis reads a file called `yevis-metadata`, which describes workflow metadata and test execution methods, and generates an workflow execution request (i.e. a POST request to `/runs` in Sapporo) to Sapporo.
+Yevis reads a file called `yevis-metadata`, which describes workflow metadata and test execution methods, and generates a workflow execution request (i.e., a POST request to `/runs` in Sapporo) to Sapporo.
 Therefore, as execution methods, we have prepared execution commands using Yevis and `yevis-metadata` files.
 
-In addition, as execution results, we uploaded `run_dir`, the result of sapporo's execution, to [Zenodo](https://zenodo.org/).
-The `run_dir` contains various workflow provenances such as input/output files, execution logs, and run request.
+In addition, as execution results, we uploaded `run_dir`, the result of Sapporo's execution, to [Zenodo](https://zenodo.org/).
+The `run_dir` contains various workflow provenances such as input/output files, execution logs, and run requests.
 
 ### `gatk-workflows/gatk4-data-processing`
 
 ### `nf-core/rnaseq`
 
-The execution method as below:
+The execution method is as below:
 
 ```bash
 yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_nf-core_rnaseq.yml -r ddbj/workflow-registry
