@@ -8,7 +8,7 @@ The workflows that were verified are as follows:
 
 - [`gatk-workflows/gatk4-data-processing`](https://github.com/gatk-workflows/gatk4-data-processing)
 - [`nf-core/rnaseq`](https://github.com/nf-core/rnaseq)
-- [`ddbj/human-reseq`](https://github.com/ddbj/human-reseq)
+- [`biosciencedbc/jga-analysis - per-sample workflow`](https://github.com/biosciencedbc/jga-analysis/blob/main/per-sample/Workflows/per-sample.cwl)
 
 ## Verification environment
 
@@ -38,7 +38,7 @@ yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevi
 
 The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6534097.svg)](https://doi.org/10.5281/zenodo.6534097).
 
-### `ddbj/human-reseq`
+### `biosciencedbc/jga-analysis - per-sample workflow`
 
 ## License
 
