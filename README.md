@@ -36,7 +36,7 @@ The execution method is as below:
 yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_nf-core_rnaseq.yml -r ddbj/workflow-registry
 ```
 
-The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6534097.svg)](https://doi.org/10.5281/zenodo.6534097).
+The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6534202.svg)](https://doi.org/10.5281/zenodo.6534202).
 
 ### `biosciencedbc/jga-analysis - per-sample workflow`
 

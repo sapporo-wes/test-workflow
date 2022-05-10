@@ -1,0 +1,106 @@
+---
+id: e31a2578-f70e-48e4-a2c3-7a3ed3aac53b
+version: 1.0.0
+license: CC0-1.0
+authors:
+  - github_account: suecharo
+    name: Hirotaka Suetake
+    affiliation: "The University of Tokyo"
+    orcid: 0000-0003-2765-0049
+workflow:
+  name: GATK workflows - data-processing
+  readme: "https://raw.githubusercontent.com/gatk-workflows/gatk4-data-processing/master/README.md"
+  language:
+    type: WDL
+    version: "1.0"
+  files:
+    - url: "https://raw.githubusercontent.com/gatk-workflows/gatk4-data-processing/master/processing-for-variant-discovery-gatk4.wdl"
+      target: processing-for-variant-discovery-gatk4.wdl
+      type: primary
+  testing:
+    - id: test_hg38_wgs
+      files:
+        - url: "https://gist.githubusercontent.com/suecharo/5666b71f9edc1532937f9f70d2d6b2e0/raw/e4e581e3c7f4aecc77dc2039777545e6fd465a1f/processing-for-variant-discovery-gatk4.hg38.wgs.inputs.json"
+          target: "processing-for-variant-discovery-gatk4.hg38.wgs.inputs.json"
+          type: wf_params
+        - url: "https://gist.githubusercontent.com/suecharo/4f82e312bec12884f35a10781718c52d/raw/f69df11bb690b165b6313bd95ac486083784d7e8/NA12878_24RG_small.txt"
+          target: "NA12878_24RG_small.txt"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dict"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.alt"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.sa"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.amb"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.bwt"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.ann"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.64.pac"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dbsnp138.vcf"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dbsnp138.vcf.idx"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.known_indels.vcf.gz"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi"
+          type: other
+        - url: "https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HJYFJ.4.NA12878.downsampled.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HJYFJ.5.NA12878.downsampled.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HJYFJ.6.NA12878.downsampled.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HJYFJ.7.NA12878.downsampled.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HJYFJ.8.NA12878.downsampled.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HJYN2.1.NA12878.downsampled.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35M.1.NA12878.downsampled.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35M.2.NA12878.downsampled.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35M.3.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35M.4.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35M.5.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35M.6.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35M.7.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35M.8.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35N.1.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK35N.2.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK3T5.1.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK3T5.2.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK3T5.3.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK3T5.4.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK3T5.5.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK3T5.6.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK3T5.7.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
+        - url: "https://storage.googleapis.com/gatk-test-data/wgs_ubam/NA12878_24RG/small/HK3T5.8.NA12878.interval.filtered.query.sorted.unmapped.bam"
+          type: other
