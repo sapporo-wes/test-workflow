@@ -14,8 +14,8 @@ The workflows that were verified are as follows:
 
 - Ubuntu: `20.04`
 - Docker: `20.10.15`
-- sapporo-service: `1.2.1`
-- yevis-cli: `0.3.2`
+- sapporo-service: `1.2.3`
+- yevis-cli: `0.3.3`
 
 ## Execution methods and results
 
@@ -27,6 +27,14 @@ In addition, as execution results, we uploaded `run_dir`, the result of Sapporo'
 The `run_dir` contains various workflow provenances such as input/output files, execution logs, and run requests.
 
 ### `broadinstitute/gatk/MitochondriaPipeline`
+
+The execution method is as below:
+
+```bash
+yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_gatk-workflows_mitochondria-pipeline.yml -r ddbj/workflow-registry
+```
+
+The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6534202.svg)](https://doi.org/10.5281/zenodo.6534202).
 
 ### `nf-core/rnaseq`
 
