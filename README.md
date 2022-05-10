@@ -6,7 +6,7 @@ This repository summarizes examples and results of actual widely used workflows 
 
 The workflows that were verified are as follows:
 
-- [`gatk-workflows/gatk4-data-processing`](https://github.com/gatk-workflows/gatk4-data-processing)
+- [`broadinstitute/gatk/MitochondriaPipeline`](https://dockstore.org/workflows/github.com/broadinstitute/gatk/MitochondriaPipeline:master?tab=info)
 - [`nf-core/rnaseq`](https://github.com/nf-core/rnaseq)
 - [`biosciencedbc/jga-analysis - per-sample workflow`](https://github.com/biosciencedbc/jga-analysis/blob/main/per-sample/Workflows/per-sample.cwl)
 
@@ -26,7 +26,7 @@ Therefore, as execution methods, we have prepared execution commands using Yevis
 In addition, as execution results, we uploaded `run_dir`, the result of Sapporo's execution, to [Zenodo](https://zenodo.org/).
 The `run_dir` contains various workflow provenances such as input/output files, execution logs, and run requests.
 
-### `gatk-workflows/gatk4-data-processing`
+### `broadinstitute/gatk/MitochondriaPipeline`
 
 ### `nf-core/rnaseq`
 
