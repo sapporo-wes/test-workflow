@@ -34,7 +34,7 @@ The execution method is as below:
 yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_gatk-workflows_mitochondria-pipeline.yml -r ddbj/workflow-registry
 ```
 
-The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6534202.svg)](https://doi.org/10.5281/zenodo.6534202).
+The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6535083.svg)](https://doi.org/10.5281/zenodo.6535083).
 
 ### `nf-core/rnaseq`
 
