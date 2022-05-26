@@ -3,7 +3,7 @@
 [![Apache License](https://img.shields.io/badge/license-Apache%202.0-orange.svg?style=flat&color=important)](http://www.apache.org/licenses/LICENSE-2.0)
 [![DOI](https://zenodo.org/badge/490141598.svg)](https://zenodo.org/badge/latestdoi/490141598)
 
-This repository summarizes examples and results of actual widely used workflows executed with [Sapporo](https://github.com/sapporo-wes/sapporo) and [Yevis](https://github.com/suecharo/yevis-cli).
+This repository summarizes examples and results of actual widely used workflows executed with [Sapporo](https://github.com/sapporo-wes/sapporo) and [Yevis](https://github.com/ddbj/yevis-cli).
 
 The workflows that were verified are as follows:
 
