@@ -1,0 +1,70 @@
+---
+id: 579bbccf-ff06-4c5f-98cb-d7a2dc73eca8
+version: 1.0.0
+license: Apache-2.0
+authors:
+  - github_account: suecharo
+    name: Suetake, Hirotaka
+    affiliation: "The University of Tokyo, Ascade Inc."
+    orcid: 0000-0003-2765-0049
+workflow:
+  name: jga-analysis per-sample workflow
+  readme: https://github.com/biosciencedbc/jga-analysis/blob/main/README.md
+  language:
+    type: CWL
+    version: v1.1
+  files:
+    - url: "https://gist.github.com/suecharo/f9678286cc876c91d8968dfbd7cd4aac"
+      target: per-sample.cwl
+      type: primary
+  testing:
+    - id: test_1
+      files:
+        - url: "https://gist.github.com/96ef41ff0cb7af998c1cb7d41b4dfc83"
+          type: wf_params
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/autosome-PAR.bed"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/autosome-PAR.interval_list"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/chrX-nonPAR.bed"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/chrX-nonPAR.interval_list"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/chrY-nonPAR.bed"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/chrY-nonPAR.interval_list"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/ERR1347662.small_1.fastq.gz"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/ERR1347662.small_2.fastq.gz"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.dbsnp138.vcf"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.dbsnp138.vcf.idx"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.dict"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.fasta"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.fasta.alt"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.fasta.amb"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.fasta.ann"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.fasta.bwt"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.fasta.fai"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.fasta.pac"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.fasta.sa"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.known_indels.vcf.gz"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz"
+          type: other
+        - url: "https://zenodo.org/api/files/caab5cda-485e-4238-b532-6452b06d4c88/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi"
+          type: other
