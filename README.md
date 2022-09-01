@@ -32,7 +32,7 @@ The `run_dir` contains various workflow provenances such as input/output files, 
 The execution method is as below:
 
 ```bash
-yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_gatk-workflows_mitochondria-pipeline.yml -r ddbj/workflow-registry
+yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_gatk-workflows_mitochondria-pipeline.yml
 ```
 
 The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6535083.svg)](https://doi.org/10.5281/zenodo.6535083).
@@ -42,7 +42,7 @@ The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.52
 The execution method is as below:
 
 ```bash
-yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_nf-core_rnaseq.yml -r ddbj/workflow-registry
+yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_nf-core_rnaseq.yml
 ```
 
 The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6534202.svg)](https://doi.org/10.5281/zenodo.6534202).
@@ -52,7 +52,7 @@ The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.52
 The execution method is as below:
 
 ```bash
-yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_jga-workflow_per-sample.yml -r ddbj/workflow-registry
+yevis test https://raw.githubusercontent.com/sapporo-wes/test-workflow/main/yevis-metadata_jga-workflow_per-sample.yml
 ```
 
 The execution results are uploaded to [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6612737.svg)](https://doi.org/10.5281/zenodo.6612737).
