@@ -21,7 +21,7 @@ The workflows that were verified are as follows:
 ## Execution methods and results
 
 We use [Yevis](https://github.com/ddbj/yevis-cli) as the execution runner for [Sapporo](https://github.com/sapporo-wes/sapporo).
-Yevis reads a file called `yevis-metadata`, which describes workflow metadata and test execution methods, and generates a workflow execution request (i.e., a POST request to `/runs` in Sapporo) to Sapporo.
+Yevis reads a file called `yevis-metadata`, which describes workflow metadata and test execution methods, and generates a workflow execution request to Sapporo. (i.e., a POST request to `/runs` in Sapporo)
 Therefore, as execution methods, we have prepared execution commands using Yevis and `yevis-metadata` files.
 
 In addition, as execution results, we uploaded `run_dir`, the result of Sapporo's execution, to [Zenodo](https://zenodo.org/).
